@@ -47,31 +47,57 @@ python training/train_cloud.py --model qwen-7b --epochs 10 --batch-size 8
 
 ## Model Selection
 
+### Recommended: Qwen2.5-Coder (Specialized for Code)
+
 | GPU | VRAM | Recommended Model | Command |
 |-----|------|-------------------|---------|
-| T4 | 16GB | `qwen-3b` | `--model qwen-3b --batch-size 2` |
-| RTX 4090 | 24GB | `qwen-7b` | `--model qwen-7b --batch-size 4` |
-| A100 40GB | 40GB | `qwen-7b` | `--model qwen-7b --batch-size 8` |
-| A100 80GB | 80GB | `qwen-14b` | `--model qwen-14b --batch-size 4` |
+| T4 | 16GB | `qwen-coder-3b` | `--model qwen-coder-3b --batch-size 2` |
+| RTX 4090 | 24GB | `qwen-coder-7b` | `--model qwen-coder-7b --batch-size 4` |
+| A100 40GB | 40GB | `qwen-coder-7b` ⭐ | `--model qwen-coder-7b --batch-size 8` |
+| A100 80GB | 80GB | `qwen-coder-14b` | `--model qwen-coder-14b --batch-size 4` |
+
+### Why Qwen2.5-Coder?
+- **5.5 trillion tokens** of code data in pretraining
+- **HumanEval 70%+** - Best open-source code benchmark
+- **Syntax-aware** - Understands code structure (critical for WAT)
+- **LoRA fine-tuning proven** - Up to 9% improvement reported
 
 ## Training Commands
 
-### Basic (defaults)
+### Basic (defaults - uses qwen-coder-7b)
 ```bash
-python training/train_cloud.py --model qwen-7b
+python training/train_cloud.py
+```
+
+### Recommended for A100
+```bash
+python training/train_cloud.py \
+    --model qwen-coder-7b \
+    --epochs 10 \
+    --batch-size 8 \
+    --max-length 1024
 ```
 
 ### Full options
 ```bash
 python training/train_cloud.py \
-    --model qwen-7b \
+    --model qwen-coder-7b \
     --epochs 10 \
     --batch-size 8 \
     --max-length 1024 \
     --lr 2e-4 \
     --lora-r 32 \
     --lora-alpha 64 \
-    --output models/zerolang-v3
+    --output models/zerolang-coder-v1
+```
+
+### Alternative models
+```bash
+# DeepSeek-Coder (good alternative)
+python training/train_cloud.py --model deepseek-coder-6.7b
+
+# Smaller model for T4
+python training/train_cloud.py --model qwen-coder-3b --batch-size 2
 ```
 
 ### With Weights & Biases logging
@@ -90,9 +116,10 @@ python training/train_cloud.py --model llama-8b --hf-token $HF_TOKEN
 
 | Model | Dataset | Epochs | Training Time | Expected Eval Loss |
 |-------|---------|--------|---------------|-------------------|
-| qwen-0.5b | 544 | 5 | ~15 min | ~0.09 |
-| qwen-7b | 544 | 10 | ~1 hour | ~0.03-0.05 |
-| qwen-7b | 5000+ | 10 | ~3-4 hours | ~0.01-0.02 |
+| qwen-coder-3b | 544 | 10 | ~30 min | ~0.05-0.07 |
+| qwen-coder-7b | 544 | 10 | ~1 hour | ~0.02-0.04 |
+| qwen-coder-7b | 5000+ | 10 | ~3-4 hours | ~0.01-0.02 |
+| qwen-coder-14b | 5000+ | 10 | ~6-8 hours | ~0.008-0.015 |
 
 ## Cost Estimates
 
