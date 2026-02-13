@@ -210,13 +210,33 @@ def main():
     model_name = MODELS[args.model]
     print(f"[MODEL] {args.model} -> {model_name}")
     
-    # Data paths
-    train_file = args.data / "train_chatml_v2.jsonl"
-    val_file = args.data / "val_chatml_v2.jsonl"
+    # Data paths - check multiple possible names
+    train_candidates = [
+        "train_chatml_colab.jsonl",  # From full pipeline
+        "train_chatml_v2.jsonl",
+        "train_chatml.jsonl",
+    ]
+    val_candidates = [
+        "val_chatml_colab.jsonl",
+        "val_chatml_v2.jsonl", 
+        "val_chatml.jsonl",
+    ]
     
-    if not train_file.exists():
-        train_file = args.data / "train_chatml.jsonl"
-        val_file = args.data / "val_chatml.jsonl"
+    train_file = None
+    val_file = None
+    for name in train_candidates:
+        if (args.data / name).exists():
+            train_file = args.data / name
+            break
+    for name in val_candidates:
+        if (args.data / name).exists():
+            val_file = args.data / name
+            break
+    
+    if train_file is None:
+        raise FileNotFoundError(f"No training data found in {args.data}. Expected one of: {train_candidates}")
+    if val_file is None:
+        raise FileNotFoundError(f"No validation data found in {args.data}. Expected one of: {val_candidates}")
     
     print(f"[DATA] Train: {train_file}")
     print(f"[DATA] Val: {val_file}")
