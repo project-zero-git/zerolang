@@ -1,0 +1,77 @@
+# ZeroLang Training Data - Curated C Repositories
+# High-quality repos with well-documented functions (doxygen style)
+# Format: One URL per line, # for comments
+
+# =============================================================================
+# ALGORITHMS & DATA STRUCTURES (High Priority)
+# =============================================================================
+https://github.com/TheAlgorithms/C
+https://github.com/fragglet/c-algorithms
+https://github.com/attractivechaos/klib
+
+# =============================================================================
+# CRYPTOGRAPHY (smaller, self-contained)
+# =============================================================================
+https://github.com/B-Con/crypto-algorithms
+https://github.com/kokke/tiny-AES-c
+https://github.com/ctz/cifra
+# libsodium - too large, many external deps
+
+# =============================================================================
+# STRING & TEXT PROCESSING
+# =============================================================================
+https://github.com/sheredom/utf8.h
+https://github.com/antirez/sds
+https://github.com/jwerle/murmurhash.c
+
+# =============================================================================
+# DATA FORMATS & PARSING
+# =============================================================================
+https://github.com/DaveGamble/cJSON
+https://github.com/zserge/jsmn
+https://github.com/kgabis/parson
+https://github.com/cesanta/frozen
+
+# =============================================================================
+# COMPRESSION
+# =============================================================================
+https://github.com/lz4/lz4
+https://github.com/richgel999/miniz
+https://github.com/madler/zlib
+https://github.com/ebiggers/libdeflate
+
+# =============================================================================
+# MATH & NUMERICAL
+# =============================================================================
+https://github.com/nothings/stb
+https://github.com/Immediate-Mode-UI/Nuklear
+
+# =============================================================================
+# COLLECTIONS & UTILITIES
+# =============================================================================
+https://github.com/troydhanson/uthash
+https://github.com/antirez/linenoise
+https://github.com/rxi/vec
+https://github.com/rxi/map
+
+# =============================================================================
+# EMBEDDED & MINIMAL (Good for WASM - no OS deps)
+# =============================================================================
+https://github.com/nodejs/http-parser
+# mongoose, contiki, mbed - too large/complex
+
+# =============================================================================
+# ADDITIONAL SMALL ALGORITHMIC REPOS
+# =============================================================================
+https://github.com/983/SHA-256
+https://github.com/983/Num
+https://github.com/skeeto/hash-prospector
+https://github.com/lemire/clhash
+https://github.com/lemire/SIMDxorshift
+https://github.com/skeeto/branchless-utf8
+https://github.com/skeeto/prng64
+https://github.com/mackron/dr_libs
+https://github.com/gingerBill/gb
+https://github.com/skeeto/optparse
+https://github.com/983/fft
+https://github.com/983/Tiny-Garbage-Collector

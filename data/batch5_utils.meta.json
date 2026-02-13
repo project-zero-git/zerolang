@@ -1,0 +1,12 @@
+{
+  "stats": {
+    "repos_processed": 7,
+    "files_scanned": 684,
+    "functions_found": 61404,
+    "functions_compiled": 111,
+    "pairs_generated": 111,
+    "duplicates_skipped": 3905
+  },
+  "language": "c",
+  "output_file": "data/batch5_utils.jsonl"
+}

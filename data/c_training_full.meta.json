@@ -1,0 +1,14 @@
+{
+  "stats": {
+    "repos_processed": 19,
+    "files_scanned": 1633,
+    "functions_found": 63458,
+    "functions_compiled": 237,
+    "pairs_generated": 237,
+    "duplicates_skipped": 3911
+  },
+  "languages": [
+    "c"
+  ],
+  "output_file": "data/c_training_full.jsonl"
+}

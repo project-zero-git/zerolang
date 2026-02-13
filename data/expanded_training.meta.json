@@ -1,0 +1,12 @@
+{
+  "stats": {
+    "repos_processed": 34,
+    "files_scanned": 1061,
+    "functions_found": 6208,
+    "functions_compiled": 59,
+    "pairs_generated": 59,
+    "duplicates_skipped": 359
+  },
+  "language": "c",
+  "output_file": "data/expanded_training.jsonl"
+}
