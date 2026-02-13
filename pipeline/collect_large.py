@@ -606,25 +606,30 @@ class LargeScaleCollector:
         for tier, repos in REPOS.items():
             all_repos.extend(repos)
         
-        print(f"\n{'='*60}")
-        print(f"ZeroLang Large-Scale Collection")
-        print(f"{'='*60}")
-        print(f"Target: {self.target_pairs} pairs")
-        print(f"Repos: {len(all_repos)}")
-        print(f"Workers: {self.max_workers}")
-        print(f"Output: {self.output_path}")
-        print(f"{'='*60}\n")
+        import sys
+        def log(msg):
+            print(msg, flush=True)
+            sys.stdout.flush()
+        
+        log(f"\n{'='*60}")
+        log(f"ZeroLang Large-Scale Collection")
+        log(f"{'='*60}")
+        log(f"Target: {self.target_pairs} pairs")
+        log(f"Repos: {len(all_repos)}")
+        log(f"Workers: {self.max_workers}")
+        log(f"Output: {self.output_path}")
+        log(f"{'='*60}\n")
         
         total_pairs = len(self.seen_hashes)
         
         with open(self.output_path, 'a') as f:
             for i, repo_url in enumerate(all_repos, 1):
                 if total_pairs >= self.target_pairs:
-                    print(f"\n[INFO] Target reached: {total_pairs} pairs")
+                    log(f"\n[INFO] Target reached: {total_pairs} pairs")
                     break
                 
                 repo_name = repo_url.split('/')[-1]
-                print(f"\n[{i}/{len(all_repos)}] Processing {repo_name}...")
+                log(f"\n[{i}/{len(all_repos)}] Processing {repo_name}...")
                 
                 pairs = self.process_repo(repo_url)
                 
@@ -634,8 +639,8 @@ class LargeScaleCollector:
                 
                 f.flush()
                 
-                print(f"  → +{len(pairs)} pairs (total: {total_pairs})")
-                print(f"  → Stats: found={self.stats.functions_found}, compiled={self.stats.functions_compiled}")
+                log(f"  → +{len(pairs)} pairs (total: {total_pairs})")
+                log(f"  → Stats: found={self.stats.functions_found}, compiled={self.stats.functions_compiled}")
         
         self._print_summary(total_pairs)
         return total_pairs
