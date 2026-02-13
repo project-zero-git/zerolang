@@ -1,0 +1,772 @@
+{
+  "add": {
+    "name": "add",
+    "signature": "int add(int a, int b)",
+    "description": "returns sum of two integers",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"add\" (func $add))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $add (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 1\n    local.get 0\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "add",
+      "sum",
+      "plus",
+      "addition"
+    ],
+    "category": "core_math"
+  },
+  "subtract": {
+    "name": "subtract",
+    "signature": "int subtract(int a, int b)",
+    "description": "returns difference",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"subtract\" (func $subtract))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $subtract (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.sub\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "subtract",
+      "minus",
+      "difference"
+    ],
+    "category": "core_math"
+  },
+  "multiply": {
+    "name": "multiply",
+    "signature": "int multiply(int a, int b)",
+    "description": "returns product",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"multiply\" (func $multiply))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $multiply (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 1\n    local.get 0\n    i32.mul\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "multiply",
+      "times",
+      "product"
+    ],
+    "category": "core_math"
+  },
+  "divide": {
+    "name": "divide",
+    "signature": "int divide(int a, int b)",
+    "description": "returns quotient",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"divide\" (func $divide))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $divide (;1;) (type 1) (param i32 i32) (result i32)\n    block ;; label = @1\n      local.get 1\n      br_if 0 (;@1;)\n      i32.const 0\n      return\n    end\n    local.get 0\n    local.get 1\n    i32.div_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "divide",
+      "quotient"
+    ],
+    "category": "core_math"
+  },
+  "modulo": {
+    "name": "modulo",
+    "signature": "int modulo(int a, int b)",
+    "description": "returns remainder",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"modulo\" (func $modulo))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $modulo (;1;) (type 1) (param i32 i32) (result i32)\n    block ;; label = @1\n      local.get 1\n      br_if 0 (;@1;)\n      i32.const 0\n      return\n    end\n    local.get 0\n    local.get 1\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "mod",
+      "modulo",
+      "remainder"
+    ],
+    "category": "core_math"
+  },
+  "abs_val": {
+    "name": "abs_val",
+    "signature": "int abs_val(int x)",
+    "description": "returns absolute value",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"abs_val\" (func $abs_val))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $abs_val (;1;) (type 1) (param i32) (result i32)\n    (local i32)\n    local.get 0\n    local.get 0\n    i32.const 31\n    i32.shr_s\n    local.tee 1\n    i32.xor\n    local.get 1\n    i32.sub\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "abs",
+      "absolute"
+    ],
+    "category": "core_math"
+  },
+  "sign": {
+    "name": "sign",
+    "signature": "int sign(int x)",
+    "description": "returns -1, 0, or 1",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"sign\" (func $sign))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $sign (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 0\n    i32.gt_s\n    local.get 0\n    i32.const 0\n    i32.lt_s\n    i32.sub\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "sign",
+      "signum"
+    ],
+    "category": "core_math"
+  },
+  "min": {
+    "name": "min",
+    "signature": "int min(int a, int b)",
+    "description": "returns minimum",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"min\" (func $min))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $min (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    local.get 0\n    local.get 1\n    i32.lt_s\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "min",
+      "minimum",
+      "smaller"
+    ],
+    "category": "core_math"
+  },
+  "max": {
+    "name": "max",
+    "signature": "int max(int a, int b)",
+    "description": "returns maximum",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"max\" (func $max))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $max (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    local.get 0\n    local.get 1\n    i32.gt_s\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "max",
+      "maximum",
+      "larger"
+    ],
+    "category": "core_math"
+  },
+  "clamp": {
+    "name": "clamp",
+    "signature": "int clamp(int val, int lo, int hi)",
+    "description": "clamps value to range",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"clamp\" (func $clamp))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $clamp (;1;) (type 1) (param i32 i32 i32) (result i32)\n    local.get 1\n    local.get 0\n    local.get 2\n    local.get 0\n    local.get 2\n    i32.lt_s\n    select\n    local.get 0\n    local.get 1\n    i32.lt_s\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "clamp",
+      "limit",
+      "constrain"
+    ],
+    "category": "core_math"
+  },
+  "square": {
+    "name": "square",
+    "signature": "int square(int x)",
+    "description": "returns x squared",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"square\" (func $square))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $square (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    local.get 0\n    i32.mul\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "square",
+      "squared"
+    ],
+    "category": "core_math"
+  },
+  "power": {
+    "name": "power",
+    "signature": "int power(int base, int exp)",
+    "description": "returns base^exp",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"power\" (func $power))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $power (;1;) (type 1) (param i32 i32) (result i32)\n    (local i32 i32 i32)\n    i32.const 1\n    local.set 2\n    block ;; label = @1\n      local.get 1\n      i32.const 1\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 1\n      i32.const 7\n      i32.and\n      local.set 3\n      block ;; label = @2\n        block ;; label = @3\n          local.get 1\n          i32.const 8\n          i32.ge_u\n          br_if 0 (;@3;)\n          i32.const 1\n          local.set 2\n          br 1 (;@2;)\n        end\n        local.get 1\n        i32.const 2147483640\n        i32.and\n        local.set 1\n        local.get 0\n        local.get 0\n        i32.mul\n        local.tee 2\n        local.get 2\n        i32.mul\n        local.tee 2\n        local.get 2\n        i32.mul\n        local.set 4\n        i32.const 1\n        local.set 2\n        loop ;; label = @3\n          local.get 2\n          local.get 4\n          i32.mul\n          local.set 2\n          local.get 1\n          i32.const -8\n          i32.add\n          local.tee 1\n          br_if 0 (;@3;)\n        end\n      end\n      local.get 3\n      i32.eqz\n      br_if 0 (;@1;)\n      loop ;; label = @2\n        local.get 2\n        local.get 0\n        i32.mul\n        local.set 2\n        local.get 3\n        i32.const -1\n        i32.add\n        local.tee 3\n        br_if 0 (;@2;)\n      end\n    end\n    local.get 2\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "power",
+      "pow",
+      "exponent"
+    ],
+    "category": "core_math"
+  },
+  "factorial": {
+    "name": "factorial",
+    "signature": "int factorial(int n)",
+    "description": "returns n!",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"factorial\" (func $factorial))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $factorial (;1;) (type 1) (param i32) (result i32)\n    (local i32 i32 i32)\n    i32.const 2\n    local.set 1\n    i32.const 1\n    local.set 2\n    block ;; label = @1\n      local.get 0\n      i32.const 2\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 0\n      i32.const -1\n      i32.add\n      local.tee 2\n      i32.const 7\n      i32.and\n      local.set 3\n      block ;; label = @2\n        block ;; label = @3\n          local.get 0\n          i32.const -2\n          i32.add\n          i32.const 7\n          i32.ge_u\n          br_if 0 (;@3;)\n          i32.const 1\n          local.set 2\n          br 1 (;@2;)\n        end\n        i32.const 0\n        local.get 2\n        i32.const -8\n        i32.and\n        i32.sub\n        local.set 0\n        i32.const 1\n        local.set 2\n        i32.const 9\n        local.set 1\n        loop ;; label = @3\n          local.get 1\n          local.get 1\n          i32.const -1\n          i32.add\n          local.get 1\n          i32.const -2\n          i32.add\n          local.get 1\n          i32.const -3\n          i32.add\n          local.get 1\n          i32.const -4\n          i32.add\n          local.get 1\n          i32.const -5\n          i32.add\n          local.get 1\n          i32.const -6\n          i32.add\n          local.get 1\n          i32.const -7\n          i32.add\n          local.get 2\n          i32.mul\n          i32.mul\n          i32.mul\n          i32.mul\n          i32.mul\n          i32.mul\n          i32.mul\n          i32.mul\n          local.set 2\n          local.get 0\n          local.get 1\n          i32.const 8\n          i32.add\n          local.tee 1\n          i32.add\n          i32.const 9\n          i32.ne\n          br_if 0 (;@3;)\n        end\n        local.get 1\n        i32.const -7\n        i32.add\n        local.set 1\n      end\n      local.get 3\n      i32.eqz\n      br_if 0 (;@1;)\n      loop ;; label = @2\n        local.get 1\n        local.get 2\n        i32.mul\n        local.set 2\n        local.get 1\n        i32.const 1\n        i32.add\n        local.set 1\n        local.get 3\n        i32.const -1\n        i32.add\n        local.tee 3\n        br_if 0 (;@2;)\n      end\n    end\n    local.get 2\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "factorial"
+    ],
+    "category": "core_math"
+  },
+  "gcd": {
+    "name": "gcd",
+    "signature": "int gcd(int a, int b)",
+    "description": "greatest common divisor",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"gcd\" (func $gcd))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $gcd (;1;) (type 1) (param i32 i32) (result i32)\n    (local i32)\n    block ;; label = @1\n      local.get 1\n      br_if 0 (;@1;)\n      local.get 0\n      return\n    end\n    loop ;; label = @1\n      local.get 0\n      local.get 1\n      local.tee 2\n      i32.rem_s\n      local.set 1\n      local.get 2\n      local.set 0\n      local.get 1\n      br_if 0 (;@1;)\n    end\n    local.get 2\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "gcd",
+      "greatest common divisor"
+    ],
+    "category": "core_math"
+  },
+  "is_even": {
+    "name": "is_even",
+    "signature": "int is_even(int n)",
+    "description": "returns 1 if even",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"is_even\" (func $is_even))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $is_even (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const -1\n    i32.xor\n    i32.const 1\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "even",
+      "divisible by 2"
+    ],
+    "category": "core_math"
+  },
+  "is_odd": {
+    "name": "is_odd",
+    "signature": "int is_odd(int n)",
+    "description": "returns 1 if odd",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"is_odd\" (func $is_odd))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $is_odd (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 1\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "odd"
+    ],
+    "category": "core_math"
+  },
+  "average": {
+    "name": "average",
+    "signature": "int average(int a, int b)",
+    "description": "returns average of two",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"average\" (func $average))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $average (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 1\n    local.get 0\n    i32.add\n    i32.const 2\n    i32.div_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "average",
+      "mean",
+      "midpoint"
+    ],
+    "category": "core_math"
+  },
+  "pack_point": {
+    "name": "pack_point",
+    "signature": "int pack_point(int x, int y)",
+    "description": "packs 2 coords into 1 int",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"pack_point\" (func $pack_point))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $pack_point (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 1\n    i32.const 65535\n    i32.and\n    local.get 0\n    i32.const 16\n    i32.shl\n    i32.or\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "pack",
+      "point",
+      "coordinate",
+      "combine"
+    ],
+    "category": "geometry"
+  },
+  "unpack_x": {
+    "name": "unpack_x",
+    "signature": "int unpack_x(int p)",
+    "description": "extracts x from packed point",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"unpack_x\" (func $unpack_x))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $unpack_x (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 16\n    i32.shr_u\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "unpack",
+      "x",
+      "coordinate"
+    ],
+    "category": "geometry"
+  },
+  "unpack_y": {
+    "name": "unpack_y",
+    "signature": "int unpack_y(int p)",
+    "description": "extracts y from packed point",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"unpack_y\" (func $unpack_y))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $unpack_y (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 65535\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "unpack",
+      "y",
+      "coordinate"
+    ],
+    "category": "geometry"
+  },
+  "point_equal": {
+    "name": "point_equal",
+    "signature": "int point_equal(int p1, int p2)",
+    "description": "returns 1 if points equal",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"point_equal\" (func $point_equal))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $point_equal (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "point",
+      "equal",
+      "same"
+    ],
+    "category": "geometry"
+  },
+  "manhattan": {
+    "name": "manhattan",
+    "signature": "int manhattan(int x1, int y1, int x2, int y2)",
+    "description": "Manhattan distance",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"manhattan\" (func $manhattan))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $manhattan (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    local.get 1\n    local.get 3\n    i32.sub\n    local.tee 3\n    local.get 3\n    i32.const 31\n    i32.shr_s\n    local.tee 3\n    i32.xor\n    local.get 3\n    i32.sub\n    local.get 0\n    local.get 2\n    i32.sub\n    local.tee 2\n    local.get 2\n    i32.const 31\n    i32.shr_s\n    local.tee 2\n    i32.xor\n    local.get 2\n    i32.sub\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "manhattan",
+      "distance",
+      "taxicab"
+    ],
+    "category": "geometry"
+  },
+  "squared_distance": {
+    "name": "squared_distance",
+    "signature": "int squared_distance(int x1, int y1, int x2, int y2)",
+    "description": "squared Euclidean distance",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"squared_distance\" (func $squared_distance))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $squared_distance (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    local.get 1\n    local.get 3\n    i32.sub\n    local.tee 3\n    local.get 3\n    i32.mul\n    local.get 0\n    local.get 2\n    i32.sub\n    local.tee 2\n    local.get 2\n    i32.mul\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "distance",
+      "squared",
+      "euclidean"
+    ],
+    "category": "geometry"
+  },
+  "dot_product": {
+    "name": "dot_product",
+    "signature": "int dot_product(int x1, int y1, int x2, int y2)",
+    "description": "dot product",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"dot_product\" (func $dot_product))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $dot_product (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    local.get 3\n    local.get 1\n    i32.mul\n    local.get 2\n    local.get 0\n    i32.mul\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "dot",
+      "product",
+      "scalar"
+    ],
+    "category": "geometry"
+  },
+  "in_rect": {
+    "name": "in_rect",
+    "signature": "int in_rect(int px, int py, int rx, int ry, int rw, int rh)",
+    "description": "point in rectangle",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"in_rect\" (func $in_rect))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $in_rect (;1;) (type 1) (param i32 i32 i32 i32 i32 i32) (result i32)\n    local.get 0\n    local.get 2\n    i32.ge_s\n    local.get 1\n    local.get 3\n    i32.ge_s\n    i32.and\n    local.get 0\n    local.get 4\n    local.get 2\n    i32.add\n    i32.lt_s\n    i32.and\n    local.get 1\n    local.get 5\n    local.get 3\n    i32.add\n    i32.lt_s\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "rect",
+      "rectangle",
+      "inside",
+      "bounds"
+    ],
+    "category": "geometry"
+  },
+  "in_circle": {
+    "name": "in_circle",
+    "signature": "int in_circle(int px, int py, int cx, int cy, int r)",
+    "description": "point in circle",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"in_circle\" (func $in_circle))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $in_circle (;1;) (type 1) (param i32 i32 i32 i32 i32) (result i32)\n    local.get 1\n    local.get 3\n    i32.sub\n    local.tee 3\n    local.get 3\n    i32.mul\n    local.get 0\n    local.get 2\n    i32.sub\n    local.tee 2\n    local.get 2\n    i32.mul\n    i32.add\n    local.get 4\n    local.get 4\n    i32.mul\n    i32.le_u\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "circle",
+      "inside",
+      "radius"
+    ],
+    "category": "geometry"
+  },
+  "get_dx": {
+    "name": "get_dx",
+    "signature": "int get_dx(int dir)",
+    "description": "x delta for direction (0=UP,1=RIGHT,2=DOWN,3=LEFT)",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"get_dx\" (func $get_dx))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $get_dx (;1;) (type 1) (param i32) (result i32)\n    i32.const 1\n    i32.const -1\n    i32.const 0\n    local.get 0\n    i32.const 3\n    i32.eq\n    select\n    local.get 0\n    i32.const 1\n    i32.eq\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "direction",
+      "dx",
+      "x",
+      "delta",
+      "movement"
+    ],
+    "category": "game_utils"
+  },
+  "get_dy": {
+    "name": "get_dy",
+    "signature": "int get_dy(int dir)",
+    "description": "y delta for direction",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"get_dy\" (func $get_dy))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $get_dy (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 2\n    i32.eq\n    i32.const -1\n    local.get 0\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "direction",
+      "dy",
+      "y",
+      "delta",
+      "movement"
+    ],
+    "category": "game_utils"
+  },
+  "opposite_dir": {
+    "name": "opposite_dir",
+    "signature": "int opposite_dir(int dir)",
+    "description": "returns opposite direction",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"opposite_dir\" (func $opposite_dir))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $opposite_dir (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 2\n    i32.add\n    i32.const 4\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "opposite",
+      "direction",
+      "reverse"
+    ],
+    "category": "game_utils"
+  },
+  "turn_left": {
+    "name": "turn_left",
+    "signature": "int turn_left(int dir)",
+    "description": "turn 90 degrees left",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"turn_left\" (func $turn_left))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $turn_left (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 3\n    i32.add\n    i32.const 4\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "turn",
+      "left",
+      "rotate"
+    ],
+    "category": "game_utils"
+  },
+  "turn_right": {
+    "name": "turn_right",
+    "signature": "int turn_right(int dir)",
+    "description": "turn 90 degrees right",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"turn_right\" (func $turn_right))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $turn_right (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 1\n    i32.add\n    i32.const 4\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "turn",
+      "right",
+      "rotate"
+    ],
+    "category": "game_utils"
+  },
+  "in_bounds": {
+    "name": "in_bounds",
+    "signature": "int in_bounds(int x, int y, int w, int h)",
+    "description": "check if in bounds",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"in_bounds\" (func $in_bounds))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $in_bounds (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    (local i32)\n    i32.const 0\n    local.set 4\n    block ;; label = @1\n      local.get 0\n      i32.const 0\n      i32.lt_s\n      br_if 0 (;@1;)\n      i32.const 0\n      local.set 4\n      local.get 1\n      i32.const 0\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 0\n      local.get 2\n      i32.ge_s\n      br_if 0 (;@1;)\n      local.get 1\n      local.get 3\n      i32.lt_s\n      local.set 4\n    end\n    local.get 4\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bounds",
+      "inside",
+      "valid",
+      "grid"
+    ],
+    "category": "game_utils"
+  },
+  "out_of_bounds": {
+    "name": "out_of_bounds",
+    "signature": "int out_of_bounds(int x, int y, int w, int h)",
+    "description": "check if out of bounds",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"out_of_bounds\" (func $out_of_bounds))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $out_of_bounds (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    (local i32)\n    i32.const 1\n    local.set 4\n    block ;; label = @1\n      local.get 0\n      i32.const 0\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 1\n      i32.const 0\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 0\n      local.get 2\n      i32.ge_s\n      br_if 0 (;@1;)\n      local.get 1\n      local.get 3\n      i32.ge_s\n      local.set 4\n    end\n    local.get 4\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bounds",
+      "outside",
+      "wall"
+    ],
+    "category": "game_utils"
+  },
+  "wrap_coord": {
+    "name": "wrap_coord",
+    "signature": "int wrap_coord(int v, int max)",
+    "description": "wrap coordinate",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"wrap_coord\" (func $wrap_coord))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $wrap_coord (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.rem_s\n    local.tee 0\n    i32.const 31\n    i32.shr_s\n    local.get 1\n    i32.and\n    local.get 0\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "wrap",
+      "coordinate",
+      "toroidal"
+    ],
+    "category": "game_utils"
+  },
+  "grid_index": {
+    "name": "grid_index",
+    "signature": "int grid_index(int x, int y, int w)",
+    "description": "2D to 1D index",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"grid_index\" (func $grid_index))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $grid_index (;1;) (type 1) (param i32 i32 i32) (result i32)\n    local.get 2\n    local.get 1\n    i32.mul\n    local.get 0\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "grid",
+      "index",
+      "2d",
+      "1d",
+      "flatten"
+    ],
+    "category": "game_utils"
+  },
+  "index_to_x": {
+    "name": "index_to_x",
+    "signature": "int index_to_x(int idx, int w)",
+    "description": "1D index to x",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"index_to_x\" (func $index_to_x))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $index_to_x (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "index",
+      "x",
+      "column"
+    ],
+    "category": "game_utils"
+  },
+  "index_to_y": {
+    "name": "index_to_y",
+    "signature": "int index_to_y(int idx, int w)",
+    "description": "1D index to y",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"index_to_y\" (func $index_to_y))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $index_to_y (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.div_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "index",
+      "y",
+      "row"
+    ],
+    "category": "game_utils"
+  },
+  "collides": {
+    "name": "collides",
+    "signature": "int collides(int p1, int p2)",
+    "description": "check collision",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"collides\" (func $collides))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $collides (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "collide",
+      "collision",
+      "overlap",
+      "same"
+    ],
+    "category": "game_utils"
+  },
+  "lcg_next": {
+    "name": "lcg_next",
+    "signature": "int lcg_next(int seed)",
+    "description": "Linear Congruential Generator",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"lcg_next\" (func $lcg_next))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $lcg_next (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 1103515245\n    i32.mul\n    i32.const 12345\n    i32.add\n    i32.const 2147483647\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "random",
+      "lcg",
+      "prng",
+      "seed"
+    ],
+    "category": "random"
+  },
+  "xorshift": {
+    "name": "xorshift",
+    "signature": "int xorshift(int seed)",
+    "description": "XorShift random",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"xorshift\" (func $xorshift))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $xorshift (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 13\n    i32.shl\n    local.get 0\n    i32.xor\n    local.tee 0\n    i32.const 17\n    i32.shr_s\n    local.get 0\n    i32.xor\n    local.tee 0\n    i32.const 5\n    i32.shl\n    local.get 0\n    i32.xor\n    i32.const 2147483647\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "random",
+      "xorshift",
+      "prng"
+    ],
+    "category": "random"
+  },
+  "rand_range": {
+    "name": "rand_range",
+    "signature": "int rand_range(int seed, int min, int max)",
+    "description": "random in range",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"rand_range\" (func $rand_range))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $rand_range (;1;) (type 1) (param i32 i32 i32) (result i32)\n    block ;; label = @1\n      local.get 2\n      local.get 1\n      i32.sub\n      local.tee 2\n      i32.const 1\n      i32.lt_s\n      br_if 0 (;@1;)\n      local.get 0\n      i32.const 2147483647\n      i32.and\n      local.get 2\n      i32.rem_u\n      local.get 1\n      i32.add\n      local.set 1\n    end\n    local.get 1\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "random",
+      "range",
+      "between"
+    ],
+    "category": "random"
+  },
+  "rand_bool": {
+    "name": "rand_bool",
+    "signature": "int rand_bool(int seed)",
+    "description": "random boolean",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"rand_bool\" (func $rand_bool))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $rand_bool (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 1\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "random",
+      "bool",
+      "flip",
+      "coin"
+    ],
+    "category": "random"
+  },
+  "simple_hash": {
+    "name": "simple_hash",
+    "signature": "int simple_hash(int x)",
+    "description": "simple integer hash",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"simple_hash\" (func $simple_hash))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $simple_hash (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 16\n    i32.shr_s\n    local.get 0\n    i32.xor\n    i32.const 73244475\n    i32.mul\n    local.tee 0\n    i32.const 16\n    i32.shr_s\n    local.get 0\n    i32.xor\n    i32.const 73244475\n    i32.mul\n    local.tee 0\n    i32.const 16\n    i32.shr_s\n    local.get 0\n    i32.xor\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "hash",
+      "scramble"
+    ],
+    "category": "random"
+  },
+  "set_bit": {
+    "name": "set_bit",
+    "signature": "int set_bit(int x, int n)",
+    "description": "set nth bit",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"set_bit\" (func $set_bit))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $set_bit (;1;) (type 1) (param i32 i32) (result i32)\n    i32.const 1\n    local.get 1\n    i32.shl\n    local.get 0\n    i32.or\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bit",
+      "set",
+      "flag",
+      "enable"
+    ],
+    "category": "bitwise"
+  },
+  "clear_bit": {
+    "name": "clear_bit",
+    "signature": "int clear_bit(int x, int n)",
+    "description": "clear nth bit",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"clear_bit\" (func $clear_bit))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $clear_bit (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    i32.const -2\n    local.get 1\n    i32.rotl\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bit",
+      "clear",
+      "flag",
+      "disable"
+    ],
+    "category": "bitwise"
+  },
+  "toggle_bit": {
+    "name": "toggle_bit",
+    "signature": "int toggle_bit(int x, int n)",
+    "description": "toggle nth bit",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"toggle_bit\" (func $toggle_bit))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $toggle_bit (;1;) (type 1) (param i32 i32) (result i32)\n    i32.const 1\n    local.get 1\n    i32.shl\n    local.get 0\n    i32.xor\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bit",
+      "toggle",
+      "flip"
+    ],
+    "category": "bitwise"
+  },
+  "get_bit": {
+    "name": "get_bit",
+    "signature": "int get_bit(int x, int n)",
+    "description": "get nth bit",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"get_bit\" (func $get_bit))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $get_bit (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.shr_u\n    i32.const 1\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "bit",
+      "get",
+      "check",
+      "read"
+    ],
+    "category": "bitwise"
+  },
+  "count_bits": {
+    "name": "count_bits",
+    "signature": "int count_bits(int x)",
+    "description": "count set bits",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"count_bits\" (func $count_bits))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $count_bits (;1;) (type 1) (param i32) (result i32)\n    (local i32 i32)\n    block ;; label = @1\n      local.get 0\n      br_if 0 (;@1;)\n      i32.const 0\n      return\n    end\n    i32.const 0\n    local.set 1\n    loop ;; label = @1\n      local.get 1\n      local.get 0\n      i32.const 1\n      i32.and\n      i32.add\n      local.set 1\n      local.get 0\n      i32.const 1\n      i32.gt_u\n      local.set 2\n      local.get 0\n      i32.const 1\n      i32.shr_s\n      local.set 0\n      local.get 2\n      br_if 0 (;@1;)\n    end\n    local.get 1\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "count",
+      "bits",
+      "popcount",
+      "hamming"
+    ],
+    "category": "bitwise"
+  },
+  "is_power_of_2": {
+    "name": "is_power_of_2",
+    "signature": "int is_power_of_2(int x)",
+    "description": "check if power of 2",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"is_power_of_2\" (func $is_power_of_2))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $is_power_of_2 (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 0\n    i32.gt_s\n    local.get 0\n    local.get 0\n    i32.const -1\n    i32.add\n    i32.and\n    i32.eqz\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "power",
+      "2",
+      "single bit"
+    ],
+    "category": "bitwise"
+  },
+  "pack_bytes": {
+    "name": "pack_bytes",
+    "signature": "int pack_bytes(int a, int b, int c, int d)",
+    "description": "pack 4 bytes",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"pack_bytes\" (func $pack_bytes))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $pack_bytes (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    local.get 1\n    i32.const 16\n    i32.shl\n    i32.const 16711680\n    i32.and\n    local.get 0\n    i32.const 24\n    i32.shl\n    i32.or\n    local.get 2\n    i32.const 8\n    i32.shl\n    i32.const 65280\n    i32.and\n    i32.or\n    local.get 3\n    i32.const 255\n    i32.and\n    i32.or\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "pack",
+      "bytes",
+      "rgba",
+      "combine"
+    ],
+    "category": "bitwise"
+  },
+  "unpack_byte": {
+    "name": "unpack_byte",
+    "signature": "int unpack_byte(int x, int n)",
+    "description": "extract nth byte",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"unpack_byte\" (func $unpack_byte))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $unpack_byte (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.const 3\n    i32.shl\n    i32.shr_s\n    i32.const 255\n    i32.and\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "unpack",
+      "byte",
+      "extract"
+    ],
+    "category": "bitwise"
+  },
+  "has_flag": {
+    "name": "has_flag",
+    "signature": "int has_flag(int flags, int flag)",
+    "description": "check if flag is set",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"has_flag\" (func $has_flag))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $has_flag (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 1\n    local.get 0\n    i32.and\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "flag",
+      "has",
+      "check",
+      "test"
+    ],
+    "category": "bitwise"
+  },
+  "circular_next": {
+    "name": "circular_next",
+    "signature": "int circular_next(int idx, int size)",
+    "description": "next index in circular buffer",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"circular_next\" (func $circular_next))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $circular_next (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    i32.const 1\n    i32.add\n    local.get 1\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "circular",
+      "next",
+      "buffer",
+      "ring"
+    ],
+    "category": "data_structures"
+  },
+  "circular_prev": {
+    "name": "circular_prev",
+    "signature": "int circular_prev(int idx, int size)",
+    "description": "previous index in circular buffer",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"circular_prev\" (func $circular_prev))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $circular_prev (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.add\n    i32.const -1\n    i32.add\n    local.get 1\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "circular",
+      "prev",
+      "previous",
+      "buffer"
+    ],
+    "category": "data_structures"
+  },
+  "buffer_length": {
+    "name": "buffer_length",
+    "signature": "int buffer_length(int head, int tail, int size)",
+    "description": "items in circular buffer",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"buffer_length\" (func $buffer_length))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $buffer_length (;1;) (type 1) (param i32 i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.sub\n    local.get 2\n    i32.add\n    local.get 2\n    i32.rem_s\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "buffer",
+      "length",
+      "count",
+      "size"
+    ],
+    "category": "data_structures"
+  },
+  "buffer_empty": {
+    "name": "buffer_empty",
+    "signature": "int buffer_empty(int head, int tail)",
+    "description": "is buffer empty",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"buffer_empty\" (func $buffer_empty))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $buffer_empty (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "buffer",
+      "empty"
+    ],
+    "category": "data_structures"
+  },
+  "buffer_full": {
+    "name": "buffer_full",
+    "signature": "int buffer_full(int head, int tail, int size)",
+    "description": "is buffer full",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"buffer_full\" (func $buffer_full))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $buffer_full (;1;) (type 1) (param i32 i32 i32) (result i32)\n    local.get 0\n    i32.const 1\n    i32.add\n    local.get 2\n    i32.rem_s\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "buffer",
+      "full"
+    ],
+    "category": "data_structures"
+  },
+  "safe_index": {
+    "name": "safe_index",
+    "signature": "int safe_index(int idx, int size)",
+    "description": "clamp index to valid range",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"safe_index\" (func $safe_index))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $safe_index (;1;) (type 1) (param i32 i32) (result i32)\n    i32.const 0\n    local.get 0\n    local.get 1\n    i32.const -1\n    i32.add\n    local.tee 1\n    local.get 0\n    local.get 1\n    i32.lt_s\n    select\n    local.get 0\n    i32.const 0\n    i32.lt_s\n    select\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "index",
+      "safe",
+      "clamp",
+      "bound"
+    ],
+    "category": "data_structures"
+  },
+  "wrap_index": {
+    "name": "wrap_index",
+    "signature": "int wrap_index(int idx, int size)",
+    "description": "wrap negative index",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"wrap_index\" (func $wrap_index))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $wrap_index (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.rem_s\n    local.tee 0\n    i32.const 31\n    i32.shr_s\n    local.get 1\n    i32.and\n    local.get 0\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "index",
+      "wrap",
+      "negative",
+      "python"
+    ],
+    "category": "data_structures"
+  },
+  "snake_move": {
+    "name": "snake_move",
+    "signature": "int snake_move(int head, int dir, int w, int h)",
+    "description": "move snake head with wrapping",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32 i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"snake_move\" (func $snake_move))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $snake_move (;1;) (type 1) (param i32 i32 i32 i32) (result i32)\n    (local i32 i32)\n    local.get 0\n    i32.const 65535\n    i32.and\n    local.set 4\n    local.get 0\n    i32.const 16\n    i32.shr_u\n    local.set 5\n    block ;; label = @1\n      block ;; label = @2\n        block ;; label = @3\n          block ;; label = @4\n            block ;; label = @5\n              local.get 1\n              br_table 0 (;@5;) 1 (;@4;) 2 (;@3;) 3 (;@2;) 4 (;@1;)\n            end\n            local.get 4\n            local.get 3\n            local.get 4\n            select\n            i32.const -1\n            i32.add\n            local.set 4\n            br 3 (;@1;)\n          end\n          local.get 5\n          i32.const 1\n          i32.add\n          i32.const 0\n          local.get 5\n          local.get 2\n          i32.const -1\n          i32.add\n          i32.lt_s\n          select\n          local.set 5\n          br 2 (;@1;)\n        end\n        local.get 4\n        i32.const 1\n        i32.add\n        i32.const 0\n        local.get 4\n        local.get 3\n        i32.const -1\n        i32.add\n        i32.lt_s\n        select\n        local.set 4\n        br 1 (;@1;)\n      end\n      local.get 2\n      local.get 5\n      local.get 0\n      i32.const 65536\n      i32.lt_u\n      select\n      i32.const -1\n      i32.add\n      local.set 5\n    end\n    local.get 4\n    i32.const 65535\n    i32.and\n    local.get 5\n    i32.const 16\n    i32.shl\n    i32.or\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "snake",
+      "move",
+      "head",
+      "position"
+    ],
+    "category": "snake_game"
+  },
+  "ate_food": {
+    "name": "ate_food",
+    "signature": "int ate_food(int head, int food)",
+    "description": "check if snake ate food",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"ate_food\" (func $ate_food))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $ate_food (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    local.get 1\n    i32.eq\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "snake",
+      "food",
+      "eat",
+      "collision"
+    ],
+    "category": "snake_game"
+  },
+  "can_turn": {
+    "name": "can_turn",
+    "signature": "int can_turn(int cur_dir, int new_dir)",
+    "description": "check if turn is valid",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32 i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"can_turn\" (func $can_turn))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $can_turn (;1;) (type 1) (param i32 i32) (result i32)\n    local.get 0\n    i32.const 2\n    i32.add\n    i32.const 4\n    i32.rem_s\n    local.get 1\n    i32.ne\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "snake",
+      "turn",
+      "direction",
+      "valid"
+    ],
+    "category": "snake_game"
+  },
+  "snake_grow": {
+    "name": "snake_grow",
+    "signature": "int snake_grow(int state)",
+    "description": "increase snake length",
+    "wat": "(module $func.wasm\n  (type (;0;) (func))\n  (type (;1;) (func (param i32) (result i32)))\n  (memory (;0;) 2)\n  (global $__stack_pointer (;0;) (mut i32) i32.const 66560)\n  (global (;1;) i32 i32.const 1024)\n  (global (;2;) i32 i32.const 1024)\n  (global (;3;) i32 i32.const 1024)\n  (global (;4;) i32 i32.const 66560)\n  (global (;5;) i32 i32.const 1024)\n  (global (;6;) i32 i32.const 66560)\n  (global (;7;) i32 i32.const 131072)\n  (global (;8;) i32 i32.const 0)\n  (global (;9;) i32 i32.const 1)\n  (global (;10;) i32 i32.const 65536)\n  (export \"memory\" (memory 0))\n  (export \"__wasm_call_ctors\" (func $__wasm_call_ctors))\n  (export \"snake_grow\" (func $snake_grow))\n  (export \"__dso_handle\" (global 1))\n  (export \"__data_end\" (global 2))\n  (export \"__stack_low\" (global 3))\n  (export \"__stack_high\" (global 4))\n  (export \"__global_base\" (global 5))\n  (export \"__heap_base\" (global 6))\n  (export \"__heap_end\" (global 7))\n  (export \"__memory_base\" (global 8))\n  (export \"__table_base\" (global 9))\n  (export \"__wasm_first_page_end\" (global 10))\n  (func $__wasm_call_ctors (;0;) (type 0))\n  (func $snake_grow (;1;) (type 1) (param i32) (result i32)\n    local.get 0\n    i32.const 65536\n    i32.add\n  )\n  (@producers\n    (processed-by \"Homebrew clang\" \"21.1.8\")\n  )\n  (@custom \"target_features\" (after code) \"\\08+\\0bbulk-memory+\\0fbulk-memory-opt+\\16call-indirect-overlong+\\0amultivalue+\\0fmutable-globals+\\13nontrapping-fptoint+\\0freference-types+\\08sign-ext\")\n)\n",
+    "keywords": [
+      "snake",
+      "grow",
+      "length"
+    ],
+    "category": "snake_game"
+  }
+}
